@@ -1,0 +1,87 @@
+/* styles.css */
+
+/* Estilo para el cuerpo del texto */
+body {
+    background-color: white; /* Fondo blanco */
+    color: black; /* Letras de color negro */
+    font-family: serif; /* Fuente tipográfica serif */
+    margin: 0;
+    padding: 20px;
+    text-align: center; /* Centramos el contenido */
+}
+
+/* Contenedor del texto */
+section {
+    width: 594px; /* Aumentamos el ancho un 25% adicional (aproximadamente 594px) */
+    margin: 0 auto; /* Centramos el contenedor en la página */
+    text-align: justify; /* Justificación del texto */
+    line-height: 1.8; /* Espaciado entre líneas aumentado */
+    font-size: 18px; /* Aumentamos el tamaño de la letra */
+}
+
+/* Estilo para los párrafos */
+p {
+    margin-bottom: 20px; /* Espacio entre párrafos */
+}
+
+/* Estilo para encabezados */
+h1, h2 {
+    margin-bottom: 15px; /* Espacio debajo de los encabezados */
+    text-align: center; /* Alineamos encabezados al centro */
+}
+
+/* Estilo para el pie de página */
+footer {
+    margin-top: 30px; /* Espacio encima del pie de página */
+    text-align: center;
+    font-size: 14px;
+    color: gray; /* Texto en gris para un estilo sutil */
+}
+
+/* Estilo para los botones de desplegable */
+.dropdown-btn {
+    background-color: white; /* Color de fondo blanco */
+    color: black; /* Texto negro */
+    padding: 10px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    border: 1px solid black; /* Borde negro para definir el botón */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    text-align: left; /* Alineación del texto a la izquierda */
+    width: 100%; /* Ocupa todo el ancho */
+    margin: 5px 0; /* Espaciado entre botones */
+    transition: background-color 0.3s, transform 0.3s; /* Transición suave */
+}
+
+/* Efecto de clic */
+.dropdown-btn:active {
+    transform: scale(0.95); /* Reduce ligeramente el tamaño */
+}
+
+/* Estilo para el contenedor desplegable */
+.dropdown-container {
+    display: none; /* Oculta el contenedor por defecto */
+    padding-left: 20px; /* Indentación */
+    background-color: #f9f9f9; /* Color de fondo gris claro */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para mayor profundidad */
+    margin-bottom: 10px; /* Espacio entre contenedores */
+    border: 1px solid black; /* Borde negro para mayor definición */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Al pasar el ratón sobre el botón */
+.dropdown-btn:hover {
+    background-color: #f0f0f0; /* Color de fondo gris claro al pasar el ratón */
+}
+
+/* Estilo para los enlaces dentro del contenedor desplegable */
+.dropdown-container a {
+    color: black; /* Texto negro */
+    text-decoration: none; /* Sin subrayado */
+    display: block; /* Hacer que los enlaces ocupen toda la línea */
+    padding: 5px 0; /* Espaciado interno en los enlaces */
+}
+
+.dropdown-container a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
