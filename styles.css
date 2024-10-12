@@ -38,6 +38,7 @@ section {
     text-align: justify;
     line-height: 1.8;
     font-size: 18px;
+    padding: 0 20px; /* Añadimos un padding para que no quede pegado a los bordes */
 }
 
 /* Estilo para los párrafos */
@@ -78,7 +79,7 @@ a:hover {
     section {
         width: 100%;
         font-size: 16px;
-        padding: 0 10px;
+        padding: 0 15px; /* Aumentamos un poco el padding lateral para centrar mejor */
     }
 
     h1, h2, h3 {
