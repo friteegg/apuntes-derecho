@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuntes Derecho</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#documentos">Descarga Apuntes PDF</a></li>
+                <li><a href="#mision">Misión</a></li>
+            </ul>
+        </nav>
+        <h1>Apuntes de Derecho de la Universidad de Lleida</h1>
+    </header>
+
+    <section id="documentos">
+        <h2>Descarga apuntes PDF</h2>
+
+        <h3>Curso 1</h3>
+        <ul>
+            <li><a href="docs/Curso 1/Derecho Civil 1.pdf" target="_blank">Derecho Civil 1</a></li>
+            <li><a href="docs/Curso 1/Derecho Penal 1.pdf" target="_blank">Derecho Penal 1</a></li>
+        </ul>
+
+        <h3>Curso 2</h3>
+        <ul>
+            <li><a href="docs/Curso 2/Derecho Administrativo 1.pdf" target="_blank">Derecho Administrativo 1</a></li>
+            <li><a href="docs/Curso 2/Derecho Internacional 1.pdf" target="_blank">Derecho Internacional 1</a></li>
+        </ul>
+
+        <h3>Curso 3</h3>
+        <ul>
+            <li><a href="docs/Curso 3/Derecho Administrativo 2.pdf" target="_blank">Derecho Administrativo 2</a></li>
+            <li><a href="docs/Curso 3/Derecho Penal 2.pdf" target="_blank">Derecho Penal 2</a></li>
+        </ul>
+
+        <h3>Curso 4</h3>
+        <ul>
+            <li><a href="docs/Curso 4/8. Expropiación forzosa - Pepe Ribera.pdf" target="_blank">Expropiación forzosa</a></li>
+            <li><a href="docs/Curso 4/Derecho Administrativo 2.pdf" target="_blank">Derecho Administrativo 2</a></li>
+        </ul>
+    </section>
+
+    <section id="mision">
+        <h2>Misión</h2>
+        <p>En la carrera de derecho, muchos estudiantes enfrentan dificultades: algunos no pueden asistir a clases, otros se enfocan tanto en tomar apuntes que salen sin entender bien las explicaciones del profesor. Además, existe un mercado clandestino de apuntes de calidad, y muchos dependen de favores de compañeros para obtenerlos. No todos tienen la capacidad económica para comprar manuales o apuntes, especialmente si deben trabajar mientras estudian.</p>
+        <p>El objetivo de esta página es proporcionar acceso gratuito y permanente a los apuntes de todas las asignaturas del Grado de Derecho de la Universidad de Lleida. Queremos que los estudiantes puedan asistir a clase sin la preocupación de tomar apuntes, con la tranquilidad de que tendrán acceso a apuntes completos después. Esto les permitirá concentrarse al máximo en las explicaciones del profesor, entender los conceptos en profundidad y salir de clase sabiendo más de lo que sabían al entrar.</p>
+        <p>Creo que el conocimiento debe ser accesible, gratuito e ilimitado para todos. Los apuntes han sido revisados por estudiantes con excelentes expedientes. Esperamos que este recurso sea de gran ayuda para tu aprendizaje.</p>
+    </section>
+
+    <footer>
+        <p>Proyecto realizado por <a href="https://friteegg.github.io/" target="_blank">Pepe Ribera</a>.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('#documentos a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault(); 
+                const pdfUrl = this.getAttribute('href');
+                window.open(pdfUrl, '_blank');
+            });
+        });
+    </script>
+</body>
+</html>
