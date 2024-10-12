@@ -78,20 +78,20 @@ a:hover {
 
     section {
         width: 100%;
-        font-size: 16px;
-        padding: 0 15px; /* Aumentamos un poco el padding lateral para centrar mejor */
+        font-size: 18px; /* Aumentamos un poco el tamaño de la letra */
+        padding: 0 25px; /* Aumentamos el padding lateral para más margen, manteniendo simetría */
     }
 
     h1, h2, h3 {
-        font-size: 22px;
+        font-size: 24px; /* Aumentamos un poco el tamaño de los encabezados */
     }
 
     p {
-        font-size: 16px;
+        font-size: 18px; /* Aumentamos el tamaño del texto de los párrafos para mejor legibilidad */
     }
 
     footer {
-        font-size: 12px;
+        font-size: 14px; /* Ajustamos el tamaño del texto en el pie de página */
     }
 
     nav ul {
