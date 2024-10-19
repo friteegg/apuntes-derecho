@@ -86,6 +86,7 @@ a:hover {
         margin: 0 auto;
         height: 100vh;
         height: -webkit-fill-available;
+        overflow-x: hidden;
     }
 
     nav ul {
