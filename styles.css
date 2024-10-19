@@ -1,5 +1,10 @@
 /* styles.css */
 
+/* Establecer el box-sizing globalmente */
+* {
+    box-sizing: border-box;
+}
+
 /* Estilo para el cuerpo del texto */
 body {
     background-color: white;
@@ -8,8 +13,7 @@ body {
     margin: 0;
     padding: 20px;
     text-align: center;
-    flex-direction: column;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Aseguramos que no haya desplazamiento horizontal */
 }
 
 /* Menú de navegación */
@@ -27,6 +31,7 @@ nav ul {
     margin: 0;
     display: flex;
     gap: 20px;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten a múltiples líneas */
 }
 
 nav a {
@@ -82,11 +87,8 @@ a:hover {
         padding: 10px;
         display: flex;
         flex-direction: column;
-        max-width: 1440px;
+        max-width: 100%; /* Asegúrate de que el ancho máximo sea 100% */
         margin: 0 auto;
-        height: 100vh;
-        height: -webkit-fill-available;
-        overflow-x: hidden;
     }
 
     nav ul {
@@ -103,16 +105,12 @@ a:hover {
     }
 
     section {
-        width: 100%;
+        width: 100%; /* Aseguramos que el ancho sea 100% */
         font-size: 18px;
-        padding: 0 25px;
+        padding: 0 25px; /* Ajusta el padding si es necesario */
     }
 
     footer {
         font-size: 14px;
-    }
-
-    html {
-        height: -webkit-fill-available;
     }
 }
