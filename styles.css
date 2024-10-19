@@ -114,3 +114,30 @@ a:hover {
         font-size: 14px;
     }
 }
+
+/* Estilo para el encabezado */
+header {
+    position: sticky; /* Sticky para que se mantenga en la parte superior */
+    top: 0; /* Posición en la parte superior */
+    width: 100%; /* Ancho completo */
+    background-color: white; /* Color de fondo (opcional) */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    padding: 10px 0; /* Espaciado alrededor del contenido */
+}
+
+/* Estilo para el pie de página */
+footer {
+    position: fixed; /* Fijo en la parte inferior */
+    bottom: 0; /* Posición en la parte inferior */
+    left: 0; /* Alineado a la izquierda */
+    width: 100%; /* Ancho completo */
+    background-color: white; /* Color de fondo (opcional) */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    padding: 10px 0; /* Espaciado alrededor del contenido */
+}
+
+/* Asegúrate de que el cuerpo tenga suficiente espacio para el contenido */
+body {
+    padding-top: 60px; /* Espacio para el header */
+    padding-bottom: 40px; /* Espacio para el footer */
+}
