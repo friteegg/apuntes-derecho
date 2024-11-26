@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuntes Derecho - Curso 2</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilo para los botones desplegables */
+        .accordion {
+            cursor: pointer;
+            background-color: #fff;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            text-align: left;
+            padding: 10px;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .accordion::before {
+            content: '\25B6'; /* Triángulo apuntando a la derecha */
+            font-size: 12px;
+            transition: transform 0.3s;
+        }
+
+        .accordion.active::before {
+            transform: rotate(90deg); /* Gira el triángulo para que apunte hacia abajo */
+        }
+
+        .panel {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background-color: #f9f9f9;
+            padding: 0 10px;
+        }
+
+        .panel p {
+            margin: 10px 0;
+        }
+
+        /* Estilo para la lista sin puntos */
+        #documentos ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    </style>
+    <script async src="https://vercel.live/js"></script>
+</head>
+<script type="module">
+    import { Analytics } from '@vercel/analytics/react';
+
+    // Opcionalmente, puedes inicializar el componente aquí si usas React
+</script>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Misión</a></li>
+                <li><a href="curso1.html">Curso 1</a></li>
+                <li><a href="curso2.html">Curso 2</a></li>
+                <li><a href="curso3.html">Curso 3</a></li>
+                <li><a href="curso4.html">Curso 4</a></li>
+            </ul>
+        </nav>
+        <h1>Apuntes de Derecho de la Universidad de Lleida</h1>
+    </header>
+
+    <section id="documentos">
+        <h2>Descarga apuntes PDF del Curso 2</h2>
+        <ul>
+            <li>
+                <button class="accordion">Dret Eclesiàstic de l'Estat: 7,0</button>
+                <div class="panel">
+                    <p></p>
+                    <a href="" target="_blank">Descargar PDF</a>
+                </div>
+            </li>
+            <li>
+                <button class="accordion">Dret Penal. Part general i delictes contra les persones: 9,0 MH</button>
+                <div class="panel">
+                    <p></p>
+                    <a href="" target="_blank">Descargar PDF</a>
+                </div>
+            </li>
+            <li>
+                <button class="accordion">Derecho Administrativo 1: 7,0</button>
+                <div class="panel">
+                    <p>Para mi fue una asignatura dificil. Estudié bastante, pero no saqué una nota excelente. Aún así, creo que mis apuntes os pueden ser de ayuda. Se trató de una asignatura anual, por esto los apuntes son tan largos. </p>
+                    <a href="docs/Curso 2/Derecho Administrativo 1.pdf" target="_blank">Descargar PDF</a>
+                </div>
+            </li>
+            <li>
+                <button class="accordion">Dret Internacional Públic: 9,2 MH</button>
+                <div class="panel">
+                    <p></p>
+                    <a href="" target="_blank">Descargar PDF</a>
+                </div>
+            </li>
+            <li>
+                <button class="accordion">Derecho de Obligaciones y Contratos: 8,0</button>
+                <div class="panel">
+                    <p></p>
+                    <a href="" target="_blank">Descargar PDF</a>
+                </div>
+            </li>
+            <li>
+                <button class="accordion">Derecho de la Unión Europea: 6,8</button>
+                <div class="panel">
+                    <p></p>
+                    <a href="" target="_blank">Descargar PDF</a>
+                </div>
+            </li>
+            <li>
+                <button class="accordion">Drets Reals: 9,7 MH</button>
+                <div class="panel">
+                    <p></p>
+                    <a href="" target="_blank">Descargar PDF</a>
+                </div>
+            </li>
+            <li>
+                <button class="accordion">Introducció al Dret Processal i Procés Civil: 8,1</button>
+                <div class="panel">
+                    <p></p>
+                    <a href="" target="_blank">Descargar PDF</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    
+    
+    <script>
+        // JavaScript para manejar el comportamiento de los desplegables
+        const accordions = document.querySelectorAll('.accordion');
+        accordions.forEach((accordion) => {
+            accordion.addEventListener('click', function() {
+                this.classList.toggle('active');
+                const panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + 'px';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

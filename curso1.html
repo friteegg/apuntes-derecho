@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuntes Derecho - Curso 1</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilo para los botones desplegables */
+        .accordion {
+            cursor: pointer;
+            background-color: #fff;
+            border: none;
+            outline: none;
+            font-size: 16px;
+            text-align: left;
+            padding: 10px;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .accordion::before {
+            content: '\25B6'; /* Triángulo apuntando a la derecha */
+            font-size: 12px;
+            transition: transform 0.3s;
+        }
+
+        .accordion.active::before {
+            transform: rotate(90deg); /* Gira el triángulo para que apunte hacia abajo */
+        }
+
+        .panel {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background-color: #f9f9f9;
+            padding: 0 10px;
+        }
+
+        .panel p {
+            margin: 10px 0;
+        }
+
+        /* Estilo para la lista sin puntos */
+        #documentos ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    </style>
+    <script async src="https://vercel.live/js"></script>
+</head>
+<script type="module">
+    import { Analytics } from '@vercel/analytics/react';
+
+    // Opcionalmente, puedes inicializar el componente aquí si usas React
+</script>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Misión</a></li>
+                <li><a href="curso1.html">Curso 1</a></li>
+                <li><a href="curso2.html">Curso 2</a></li>
+                <li><a href="curso3.html">Curso 3</a></li>
+                <li><a href="curso4.html">Curso 4</a></li>
+            </ul>
+        </nav>
+        <h1>Apuntes de Derecho de la Universidad de Lleida</h1>
+    </header>
+
+    <section id="documentos">
+        <h2>Descarga apuntes PDF del Curso 1</h2>
+        <ul>
+            <li>
+                <button class="accordion">Teoría del Derecho: 7,0</button>
+                <div class="panel">
+                    <p>Aunque la nota no sea excelente considero que los apuntes están bastante bien. Están diseñados con preguntas porque el examen era tipo test. Nota obtenida: 7,0.</p>
+                    <a href="docs/Curso 1/Teoría del Derecho.pdf" target="_blank">Descargar PDF</a>
+                </div>
+            </li>
+            <li>
+                <button class="accordion">Dret Romà: 9,5 MH</button>
+                <div class="panel">
+                    <p>Considero que estàn molt complets. L'assignatura es va fer en català i per això estan en català els apunts. Nota obtinguda: 9,5 MH.</p>
+                    <a href="docs/Curso 1/Dret Romà.pdf" target="_blank">Descargar PDF</a>
+                </div>
+            </li>
+            <li>
+                <button class="accordion">Derecho Constitucional 1: 8,0</button>
+                <div class="panel">
+                    <p>La asignatura la impartieron dos profesores diferentes, por eso los apuntes son bastante heterogéneos. Hay una parte en colores y la otra parte no. Eso es porque estaban todos los apuntes con colores, empecé a quitar los colores pero estaba tardando demasiado, y la prioridad es que podáis aprovechar mis apuntes sin que me suponga a mi un trabajo extraordinario. Nota obtenida: 8,0.</p>
+                    <a href="docs/Curso 1/Derecho Constitucional 1.pdf" target="_blank">Descargar PDF</a>
+                </div>
+            </li>
+            <li>
+                <button class="accordion">Economía y Empresa</button>
+                <div class="panel">
+                    <p>Estos apuntes abarcan conceptos básicos de economía aplicados al entorno empresarial, esenciales para entender la interacción entre el derecho y la economía.</p>
+                    <a href="docs/Curso 1/Derecho Penal 1.pdf" target="_blank">Descargar PDF</a>
+                </div>
+            </li>
+            <li>
+                <button class="accordion">Comparative Law</button>
+                <div class="panel">
+                    <p>Apuntes de Derecho Comparado, analizando diferencias y similitudes entre los sistemas jurídicos de diversos países.</p>
+                    <a href="docs/Curso 1/Derecho Penal 1.pdf" target="_blank">Descargar PDF</a>
+                </div>
+            </li>
+            <li>
+                <button class="accordion">Derecho Constitucional 2</button>
+                <div class="panel">
+                    <p>Estos apuntes cubren la segunda parte de Derecho Constitucional, centrándose en el estudio de la estructura del Estado y la organización de sus instituciones.</p>
+                    <a href="docs/Curso 1/Derecho Penal 1.pdf" target="_blank">Descargar PDF</a>
+                </div>
+            </li>
+            <li>
+                <button class="accordion">Història del Dret</button>
+                <div class="panel">
+                    <p>Apuntes que tratan la evolución histórica del derecho desde sus orígenes hasta la actualidad, con un enfoque en la tradición jurídica europea.</p>
+                    <a href="docs/Curso 1/Derecho Penal 1.pdf" target="_blank">Descargar PDF</a>
+                </div>
+            </li>
+            <li>
+                <button class="accordion">Introducció al Dret Civil i de la Persona</button>
+                <div class="panel">
+                    <p>Material introductorio al derecho civil, centrándose en los derechos de la persona y el sistema de relaciones privadas.</p>
+                    <a href="docs/Curso 1/Derecho Penal 1.pdf" target="_blank">Descargar PDF</a>
+                </div>
+            </li>
+            <li>
+                <button class="accordion">Derecho de Família</button>
+                <div class="panel">
+                    <p>Apuntes sobre Derecho de Familia, incluyendo el estudio de las relaciones familiares, matrimonio, y filiación.</p>
+                    <a href="docs/Curso 1/Derecho Penal 1.pdf" target="_blank">Descargar PDF</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    
+
+    <script>
+        // JavaScript para manejar el comportamiento de los desplegables
+        const accordions = document.querySelectorAll('.accordion');
+        accordions.forEach((accordion) => {
+            accordion.addEventListener('click', function() {
+                this.classList.toggle('active');
+                const panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + 'px';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
