@@ -113,6 +113,12 @@ a:hover {
     footer {
         font-size: 14px;
     }
+
+    /* Añade aquí la regla para que el menú no sea sticky en móviles */
+    header {
+        position: relative; /* Cambia sticky por relative en móviles */
+        top: auto;
+    }
 }
 
 /* Estilo para el encabezado */
